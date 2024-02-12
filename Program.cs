@@ -6,7 +6,12 @@ namespace Aktienkurs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting...");
+            Aktie aktie = new Aktie(100.0);
+            KursDisplay kursDisplay = new KursDisplay(aktie);
+            KursAlarm kursAlarm = new KursAlarm(aktie, "Eigentümer");
+
+            aktie.SetKurswert(80.0);
+            aktie.SetKurswert(120.0);
         }
     }
 }

@@ -7,16 +7,8 @@ namespace Aktienkurs
 {
     public interface ISubject
     {
-        public void Register(IObserver o)
-        {
-        }
-
-        public void Remove(IObserver o)
-        {
-        }
-
-        public void Notify()
-        {
-        }
+        void RegisterObserver(IObserver observer);
+        void RemoveObserver(IObserver observer);
+        void NotifyObservers();
     }
 }

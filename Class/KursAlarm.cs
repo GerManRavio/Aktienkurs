@@ -7,19 +7,27 @@ namespace Aktienkurs
 {
     public class KursAlarm : IObserver
     {
-        private Subject Aktie;
-        String empfaenger;
+        private string empfaenger;
+        private Subject aktie;
 
-        private void sendMessage() {
-            System.Console.WriteLine(this.empfaenger + ": Aktie fällt!");
+        public KursAlarm(Subject aktie, string empfaenger)
+        {
+            this.aktie = aktie;
+            this.empfaenger = empfaenger;
+            aktie.RegisterObserver(this);
         }
 
-        public KursAlarm(Subject o) {
-            System.Console.WriteLine("Kursalarm wurde erstellt.");
+        public void Update()
+        {
+            if (aktie.GetKurswertProzent() <= -20.0)
+            {
+                SendMessage();
+            }
         }
 
-        public void Update() {
-            System.Console.WriteLine("Aktie: ");
+        private void SendMessage()
+        {
+            Console.WriteLine($"Kursalarm: Kurs der Aktie ist um 20% gefallen! Benachrichtigung an {empfaenger} gesendet.");
         }
     }
 }

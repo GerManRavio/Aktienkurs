@@ -7,20 +7,27 @@ namespace Aktienkurs
 {
     public abstract class Subject : ISubject
     {
-        List<IObserver> observers;
+        private List<IObserver> observers = new List<IObserver>();
 
-        public void Register(IObserver o) {
-            observers.Add(o);
+        public void RegisterObserver(IObserver observer)
+        {
+            observers.Add(observer);
         }
 
-        public void Remove(IObserver o) {
-            observers.Remove(o);
+        public void RemoveObserver(IObserver observer)
+        {
+            observers.Remove(observer);
         }
 
-        public void Notify() {
-            foreach(IObserver o in observers) {
-                o.Update();
+        public void NotifyObservers()
+        {
+            foreach (var observer in observers)
+            {
+                observer.Update();
             }
         }
+
+        public abstract double GetKurswertAktuell();
+        public abstract double GetKurswertProzent();
     }
 }

@@ -7,25 +7,31 @@ namespace Aktienkurs
 {
     public class Aktie : Subject
     {
-        Double kurswert_Handelsbeginn;
-        Double kurswert_aktuell;
-        Double kurswert_VeraenderungProzent = Convert.ToDouble(new Random(100));
+        private double kurswert_Handelsbeginn;
+        private double kurswert_aktuell;
+        private double kurswert_VeraenderungProzent;
 
-        public Aktie(Double wertHandelsbeginn) {
-         this.kurswert_Handelsbeginn = wertHandelsbeginn;   
+        public Aktie(double wertHandelsbeginn)
+        {
+            this.kurswert_Handelsbeginn = wertHandelsbeginn;
+            this.kurswert_aktuell = wertHandelsbeginn;
         }
 
-        public Double GetKurswertAktuell() {
-            return this.kurswert_aktuell;
+        public override double GetKurswertAktuell()
+        {
+            return kurswert_aktuell;
         }
 
-        public Double GetKurswertProzent() {
+        public override double GetKurswertProzent()
+        {
             return this.kurswert_VeraenderungProzent;
         }
 
-        public void SetKurswert(Double wert) {
-            this.kurswert_VeraenderungProzent = 100 / this.kurswert_Handelsbeginn * (this.kurswert_Handelsbeginn - this.kurswert_aktuell);
-            this.kurswert_aktuell = wert;
+        public void SetKurswert(double wert)
+        {
+            this.kurswert_VeraenderungProzent = ((wert - kurswert_Handelsbeginn) / kurswert_Handelsbeginn) * 100.0;
+            kurswert_aktuell = wert;
+            NotifyObservers();
         }
     }
 }

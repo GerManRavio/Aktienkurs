@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace Aktienkurs
 {
+
     public interface IObserver
     {
-        public void Update() {
-
-        }
+        void Update();
     }
+
 }
