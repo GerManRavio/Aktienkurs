@@ -1,0 +1,14 @@
+/home/elias/Dokumente/Git/Aktienkurs/bin/Debug/net8.0/Git
+/home/elias/Dokumente/Git/Aktienkurs/bin/Debug/net8.0/Git.deps.json
+/home/elias/Dokumente/Git/Aktienkurs/bin/Debug/net8.0/Git.runtimeconfig.json
+/home/elias/Dokumente/Git/Aktienkurs/bin/Debug/net8.0/Git.dll
+/home/elias/Dokumente/Git/Aktienkurs/bin/Debug/net8.0/Git.pdb
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/Git.GeneratedMSBuildEditorConfig.editorconfig
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/Git.AssemblyInfoInputs.cache
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/Git.AssemblyInfo.cs
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/Git.csproj.CoreCompileInputs.cache
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/Git.dll
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/refint/Git.dll
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/Git.pdb
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/Git.genruntimeconfig.cache
+/home/elias/Dokumente/Git/Aktienkurs/obj/Debug/net8.0/ref/Git.dll

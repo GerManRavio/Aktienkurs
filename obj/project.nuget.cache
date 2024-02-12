@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bCdoQDLEA3y35B45YEtDfAxmUmt40tAr8F/l4TiGHMNmIQCleZKIG2dbdhfqEfcXnYL/J5rf7x7jLKUYiJ2zuA==",
+  "success": true,
+  "projectFilePath": "/home/elias/Dokumente/Git/Aktienkurs/Git.csproj",
+  "expectedPackageFiles": [
+    "/home/elias/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.0/microsoft.aspnetcore.app.ref.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
