@@ -27,7 +27,7 @@ namespace Aktienkurs
 
         private void SendMessage()
         {
-            Console.WriteLine($"Kursalarm: Kurs der Aktie ist um 20% gefallen! Benachrichtigung an {empfaenger} gesendet.");
+            Console.WriteLine($"Kursalarm: Kurs der Aktie ist um mindestends 20% gefallen! Benachrichtigung an {empfaenger} gesendet.");
         }
     }
 }
